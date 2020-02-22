@@ -22,7 +22,8 @@ const startButton = document.querySelector('.start-button'),
     total = document.querySelector('.total'),
     fastRange = document.querySelector('.fast-range'),
     totalPriceSum = document.querySelector('.total_price__sum'),
-    adapt = document.querySelector('mobileTemplates');
+    adapt = document.getElementById('adapt'),
+    mobileTemplates = document.getElementById('mobileTemplates');
 
     // let adapt = document.querySelector("#adapt");
     // let mobileTemplates = document.querySelector("#mobileTemplates");
@@ -84,15 +85,13 @@ function priceCalculation(elem) {
 }
 
 
-// for (const item of mobileTemplates){
-    // adapt.onchange = () => {
+
   if (adapt.checked){
       mobileTemplates.disablet = false;
   }else {
-    mobileTemplates.checked = false;
-    mobileTemplates.disabled = true;
+    mobileTemplates.checked = true;
+    mobileTemplates.disabled = false;
 }
-};
 
 
 
